@@ -1,0 +1,23 @@
+{
+  "name": "stellar-whitebelt",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "tsx src/index.ts",
+    "wallet:create": "tsx src/index.ts wallet",
+    "balance": "tsx src/index.ts balance",
+    "tx:demo": "tsx src/index.ts tx",
+    "test": "node --import tsx --test tests/**/*.test.ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.1",
+    "stellar-sdk": "^13.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "tsx": "^4.19.0",
+    "typescript": "^5.8.3"
+  }
+}
